@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aula sobre: comentários, metadados, listas e layout">
+    <meta name="keywords" content="HTML, Cometários, Listas, Layout, Elementos Semâticos">
+    <meta name="author" content="Gabriella de Moraes">
+    <link rel="stylesheet" href="css/estilo.css">    
+    <title>Aula 5</title>
+</head>
+<body>
+    <header id="topo"><!--topo da página-->
+        <img id="imagem" src="imagem/FATEC_ZONA_LESTE.png" alt="Imagem com a palavra Fatec em cinza e a 
+        palavra zona leste em vermelho">
+        <h1 id="titulo">Faculdade de Tecnologia da Zona Leste</h1>
+        <nav>
+            <ul id="lista"> <!--lista não ordenada--> 
+                <li><a href="index.html">Início</a></li>
+                <li><a href="comentarios.html">Comentários</a></li>
+                <li><a href="metadados.html">Metadados</a></li>
+                <li><a href="javascript:void(0);">Listas</a> <!-- ou #-->
+                    <ul>
+                        <li><a href="lista_ordenada.html">Lista Ordenada</a></li>
+                        <li><a href="lista_nao_ordenada.html">Lista não Ordenada</a></li>
+                    </ul>
+                </li> 
+                <li><a href="layout.html">Layout</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="conteudo"> <!--conteudo principal da página-->
+        <h1 id="titulo-conteudo">Lista não Ordenada</h1>
+        <p>Uma lista não ordenada começa com a tag &lt;ul&gt;. Cada item da lista começa com a tag &lt;li&gt;.
+        </p>
+        <img class="img" src="imagem/ul.png" alt="imagem com conteudo explicativo sobre lista não ordenada em HTML">
+    </main>
+    <footer id="rodape">Desenvolvido por Gabriella &copy; 2021</footer> <!--rodapé da pagina-->
+</body>
+</html>
