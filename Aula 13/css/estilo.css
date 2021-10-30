@@ -1,0 +1,347 @@
+*{margin: 0; padding: 0;}
+body{
+  background-color: #e2e0e0;
+  font-size: 14px;  
+}
+#topo{
+    width: 100%;
+    height: auto;
+    background-color: #970000;
+    display: block;
+}
+#titulo{
+    height: 100%;
+    text-align: center;
+    color: black;
+    background-color:#e2e0e0;
+    padding: 30px;
+}
+#imagem{
+    width: 10%;
+    height: auto;
+    padding: 0px 10px;
+    background: #fff;
+    margin: 10px;
+}
+#acessibilidade{
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+    margin: auto;
+}
+#atalhos{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    list-style: none;
+    padding-left: 1%;
+}
+#atalhos li{
+    display: inline;
+}
+#atalhos li a{
+    color: #000;
+}
+#atalhos li a:hover{
+    color: #3E3E3E;
+}
+#pgacess{
+    padding-left: 35%;
+}
+.contraste{
+    padding-left: 5px;
+}
+.fonte{
+    padding-left: 5px;
+}
+/* barra de navegação */
+nav{
+    width: 98%;
+    height: auto;
+    background-color: #970000;
+    float: left;
+    margin-bottom: 15px;
+    margin-left: 10px;
+    border-radius: 10px;
+}
+#menu{
+    list-style: none;
+    border: 1px #970000;
+    float: left;
+    padding: 5px;
+}
+#menu li{
+    position: relative;
+    float: left;
+    border-right: 1px solid #970000;
+}
+#menu li a{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    display: block;
+}
+#menu li a:hover{
+    background-color: #fff;
+    transition: 1s;
+    color: #970000;
+    box-shadow: 5px 5px;
+    -moz-box-shadow:0 3px 10px 0 #550d0d;
+    -webkit-box-shadow:0 3px 10px 0 #550d0d;
+    text-shadow:0px 0px 2px #550d0d;
+}
+/* Submenu*/
+#menu li ul{
+    position:absolute; 
+    top: 27px;
+    left: 0;
+    background-color: #970000;
+    display: none;
+}
+#menu li:hover ul{
+    display: block;
+}
+#menu li ul li{
+    border: 1px solid #970000;
+    display: block;
+    width: 150px;
+}
+/* menu responsivo*/
+label[for="bt_menu"]{
+    display: none;
+}
+#bt_menu{
+    display: none;
+}
+#conteudo{
+    width: 100%;
+    min-height: 600px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+}
+#titulo_conteudo{
+    text-align: center;
+    padding-top: 1%;
+}
+#titulo_index{
+    text-align: center;
+    padding-top: 5%;
+}
+#titulo_contato{
+    text-align: center;
+    padding-top: 1%;
+}
+section{
+    padding: 2%;
+}
+/* formulario contato*/
+input,select{
+    width: 60%;
+    height: 40px;
+    background-color: #f7f2f2;
+    color: #000;
+    border-radius: 10px;
+    padding: 5px;
+    margin-left: 5px;
+}
+label, legend{
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+fieldset{
+    border-color: #550d0d;
+    padding-bottom: 5px;
+    border-radius: 15px;
+    text-align: center;
+    margin-right: 20%;
+    margin-left: 20%;
+}
+textarea{
+    width: 60%;
+    padding: 5px;
+    margin-left: 5px;
+    border-radius: 10px;
+}
+/*seletor de atributo*/
+input[type=submit]{ 
+    width: 15%;
+    height: 40px;
+    background-color: #970000;
+    color: #fff;
+    margin-left: 35%;
+    margin-top: 5px;
+}
+input[type=reset]{ 
+    width: 15%;
+    height: 40px;
+    background-color: #970000;
+    color: #fff;
+    margin-top: 5px;
+}
+.required:after{
+    content: " *";
+    color: red;
+}
+#video{
+    width: 50%;
+    height: auto;
+}
+iframe{
+    width: 600px;
+    height: 365px;
+}
+#rodape{
+    width: 100%;
+    height: 60px;
+    background-color: #3E3E3E;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    color: #fff;
+    text-align: center;
+    padding-top: 2%;
+}
+.img{
+    padding-left: 25px;
+    width: 40%;
+    height: auto;
+}
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    text-align: justify;
+}
+.breadcrumb{
+    padding-left: 1%;
+    list-style: none;
+    text-align: justify;
+    padding-top: 4%;
+    padding-bottom: 1%;
+}
+.breadcrumb li{
+    display: inline;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8em;
+    color: #000;
+}
+.breadcrumb li a{
+    color: #3E3E3E;
+    text-decoration: none;
+}
+.breadcrumb li+li:before{
+    content: "/\00a0";
+    padding: 6px;
+    color: #000;
+}
+.breadcrumb li a:hover{
+    color: #000;
+    text-decoration: underline;
+}
+/*media querie*/
+
+/*media querie menu responsivo*/
+@media screen and (max-width:630px){
+    #menu{
+        display: none;
+    }
+    label[for="bt_menu"]{
+        display: block;
+        padding-top: 1%;
+    }
+    #bt_menu:checked ~ #menu{
+        display: block;
+        border: none;
+    }
+    #menu li{
+        position: relative;
+        float: left;
+        width: 100%;
+        border: none;
+    }
+    #menu li ul{
+        position: static;
+        width: 100%;
+        float: right;
+        border: none;
+    }
+    #menu li ul li{
+        position: relative;
+        width: 98%;
+        float: left;
+        display: block;
+        border: none;
+        padding-left: 2%;
+        background-color: #3E3E3E;
+    }
+}
+/*media querie barra de acessibilidae*/
+@media screen and (max-width: 1440px) {
+    #pgacess{
+        padding-left: 30%;
+    }
+    .contraste{
+        padding-left: 5px;
+    }
+    .fonte{
+        padding-left: 5px;
+    }
+}
+@media screen and (max-width: 1280px){
+    #pgacess{
+        padding-left: 20%;
+    }
+}
+@media screen and (max-width: 1024px){
+    #pgacess{
+        padding-left: 15%;
+    }
+}
+@media screen and (max-width: 630px){
+    ul#atalhos li{
+        display: none;
+    }
+    ul#atalhos li#pgacess{
+        display: inline-block;
+    }
+    ul#atalhos li.contraste{
+        display: inline-block;
+    }
+    ul#atalhos li.fonte{
+        display: inline-block;
+    }
+}
+@media screen and (max-width: 420px){
+    #atalhos{
+        font-size: 0.75em;
+    }
+    ul#atalhos li#pgacess{
+        display: inline-block;
+        padding-left: 2%;
+    }
+    ul#atalhos li.contraste{
+        display: inline-block;
+    }
+    ul#atalhos li.fonte{
+        display: inline-block;
+    }
+}
+/*media querie de ajuste o vídeo*/
+@media screen and (max-width: 630px){
+    #video{
+        width: 50%;
+        height: auto;
+    }
+    iframe{
+        width: 50%;
+        height: 150px;
+    }
+}
+/*media querie de ajuste da foto*/
+@media screen and (max-width: 630px) {
+    .img{
+        width: 70%;
+        height: auto;
+    }
+}
