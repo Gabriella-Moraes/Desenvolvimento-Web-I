@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aula sobre: comentários, metadados, listas e layout">
+    <meta name="keywords" content="HTML, Cometários, Listas, Layout, Elementos Semâticos">
+    <meta name="author" content="Gabriella de Moraes">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">    
+    <title>Aula 5</title>
+</head>
+<body>
+    <header id="topo"><!--topo da página-->
+        <div id="acessibilidade">
+            <ul id="atalhos">
+                <li><a href="#conteudo" accesskey="1" title="Ir diretamente para o conteúdo">Ir para o conteúdo [1]</a></li>
+                <li><a href="#menu" accesskey="2" title="Ir diretamente para o menu">Ir para o menu [2]</a></li>
+                <li><a href="#rodape" accesskey="3" title="Ir diretamente para o rodapé">Ir para o rodapé [3]</a></li>
+                
+                <li id="pgacess"><a href="acessibilidade.html" title="Ir para a página de Acessibilidade">ACESSIBILIDADE</a></li>
+
+                <li class="contraste"><a href="javascript:void(0);" id="contraste">CONTRASTE PRETO</a></li>
+                <li class="contraste"><a href="javascript:void(0);" id="sem_contraste">SEM CONTRASTE</a></li>
+                <li class="fonte"><a href="javascript:void(0);" id="aumentar">A+</a></li>
+                <li class="fonte"><a href="javascript:void(0);" id="diminuir">A-</a></li>
+            </ul>
+        </div>
+        <img id="imagem" src="imagem/FATEC_ZONA_LESTE.png" alt="Imagem com a palavra Fatec em cinza e a 
+        palavra zona leste em vermelho">
+        <h1 id="titulo">Faculdade de Tecnologia da Zona Leste</h1>
+        <nav>
+            <label for="bt_menu"><img src="imagem/menu.png" alt="menu"></label>
+            <input type="checkbox" id="bt_menu">
+            <ul id="menu"> <!--lista não ordenada--> 
+                <li><a href="index.html">Início</a></li>
+                <li><a href="comentarios.html">Comentários</a></li>
+                <li><a href="metadados.html">Metadados</a></li>
+                <li><a href="javascript:void(0);">Listas</a> <!-- ou #-->
+                    <ul>
+                        <li><a href="lista_ordenada.html">Lista Ordenada</a></li>
+                        <li><a href="lista_nao_ordenada.html">Lista não Ordenada</a></li>
+                    </ul>
+                </li> 
+                <li><a href="layout.html">Layout</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+        <div vw class="enabled">
+            <div vw-access-button class="active"></div>
+            <div vw-plugin-wrapper>
+              <div class="vw-plugin-top-wrapper"></div>
+            </div>
+        </div>
+          <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+          <script>
+            new window.VLibras.Widget('https://vlibras.gov.br/app');
+          </script>
+    </header>
+    <main id="conteudo"> <!--conteudo principal da página-->
+        <ul class="breadcrumb">
+            <li><a href="index.html">Início</a></li>
+            <li>Layout</li>
+        </ul>
+        <h1 id="titulo_conteudo">Elementos de Layout</h1>
+        <audio controls>
+            <source src="audio/Elementos_de_Layout.mp3" type="audio/mp3">
+            Este navegador não suporta o elemento audio ou o formato de arquivo utilizado.
+        </audio>
+        <section>
+        <p><b>&lt;header&gt;</b> - define um cabeçalho para um documento ou seção.</p>
+        <p><b>&lt;nav&gt;</b> - Define um contêiner para links de navegação.</p>
+        <p><b>&lt;section&gt;</b> - Define uma seção em um documento.</p>
+        <p><b>&lt;article&gt;</b> - Define um artigo independente.</p>
+        <p><b>&lt;aside&gt;</b> - Define o conteúdo além do conteúdo (como uma barra lateral).</p>
+        <p><b>&lt;footer&gt;</b> - define um rodapé para um documento ou seção.</p>
+        <img id="img_layout" src="imagem/layout.png" alt="imagem com conteudo explicativo sobre elementos semanticos de layout em HTML">
+        </section>
+    </main>
+    <footer id="rodape">Desenvolvido por Gabriella &copy; 2021</footer> <!--rodapé da pagina-->
+</body>
